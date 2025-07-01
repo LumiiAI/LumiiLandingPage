@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LumiiAI for K12 – Coming Soon</title>
+  <meta name="description" content="LumiiAI: The next-gen SaaS platform for K12 students' wellbeing and learning support. Sign up for early access!" />
+  <meta name="keywords" content="LumiiAI, K12, SaaS, wellbeing, learning, student help, education, coming soon, lead generation" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      background: #f8fafd;
+      color: #222;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .logo {
+      width: 60px;
+      margin: 0 auto 1.5rem;
+      display: block;
+    }
+    .headline {
+      text-align: center;
+      font-weight: 800;
+      font-size: 2.1rem;
+      margin-bottom: 1rem;
+      color: #2a3d66;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 1.15rem;
+      margin-bottom: 2rem;
+      color: #505f79;
+    }
+    .email-form {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .email-form input[type="email"] {
+      flex: 1 1 180px;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      border: 1px solid #d2d6dc;
+      font-size: 1rem;
+      outline: none;
+      min-width: 0;
+    }
+    .email-form button {
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      border: none;
+      background: #3b82f6;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .email-form button:hover {
+      background: #2563eb;
+    }
+    .features-section {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(42,61,102,0.10);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding: 2rem 1rem;
+    }
+    .features-section h2 {
+      text-align: center;
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #3651a5;
+    }
+    .features-grid {
+      display: grid;
+      gap: 1.2rem;
+      grid-template-columns: 1fr;
+    }
+    .feature-card {
+      background: #f1f7fe;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      min-height: 120px;
+    }
+    .feature-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #3b82f6;
+    }
+    .feature-card h3 {
+      margin: 0.4rem 0 0.5rem;
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: #223366;
+    }
+    .feature-card p {
+      font-size: 0.99rem;
+      color: #4b587c;
+      margin: 0;
+    }
+    .cta-section {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .cta-section h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #3651a5;
+    }
+    .cta-section p {
+      color: #505f79;
+      margin-bottom: 1.3rem;
+    }
+    .form-message {
+      text-align: center;
+      color: #16a34a;
+      font-weight: 600;
+      min-height: 1.2em;
+      margin-bottom: 1rem;
+    }
+    .form-message.error {
+      color: #ef4444;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 0.7rem;
+      font-size: 0.95rem;
+      color: #7b849e;
+      background: none;
+    }
+    @media (min-width: 650px) {
+      .features-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (min-width: 900px) {
+      .container {
+        max-width: 750px;
+      }
+      .features-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="lumii-logo.svg" alt="LumiiAI Logo" class="logo" />
+    <h1 class="headline">LumiiAI for K12 – Coming Soon!</h1>
+    <p class="subtitle">
+      The all-in-one SaaS to boost K12 students' wellbeing and learning outcomes.<br>
+      Subscribe now to get notified at launch and secure early access!
+    </p>
+    <form id="emailForm" class="email-form" autocomplete="off">
+      <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email" />
+      <button type="submit">Subscribe Now</button>
+    </form>
+    <p id="formMessage" class="form-message"></p>
+
+    <section class="features-section">
+      <h2>Key Features for Students and Schools</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Personalized Wellbeing Insights</h3>
+          <p>AI-powered mood and stress detection with actionable wellbeing tips.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Smart Learning Recommendations</h3>
+          <p>Adaptive content suggestions to help every student thrive.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3>Homework & Study Assistant</h3>
+          <p>Instant help on assignments, study plans, and time management.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👨‍👩‍👧‍👦</div>
+          <h3>Family & Teacher Dashboards</h3>
+          <p>Insights for parents and teachers to support every learner.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Privacy-First & Secure</h3>
+          <p>100% student privacy, GDPR-compliant, safe data handling.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Be First to Try LumiiAI</h2>
+      <p>Sign up for early access and product updates.<br>Your journey to better wellbeing and learning starts here!</p>
+      <form id="emailFormBottom" class="email-form" autocomplete="off">
+        <input type="email" id="email-bottom" name="email-bottom" placeholder="Your email address" required autocomplete="email" />
+        <button type="submit">Join Waitlist</button>
+      </form>
+      <p id="formMessageBottom" class="form-message"></p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 LumiiAI. All rights reserved.
+  </footer>
+  <script>
+    // Replace this endpoint with your real backend/email service endpoint
+    const EMAIL_API_ENDPOINT = 'https://formspree.io/f/your-form-id'; // <-- Insert your Formspree or other provider endpoint
+
+    function handleFormSubmit(formId, emailId, messageId) {
+      const form = document.getElementById(formId);
+      const emailInput = document.getElementById(emailId);
+      const message = document.getElementById(messageId);
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        if (emailInput.value && emailInput.validity.valid) {
+          message.textContent = "Submitting...";
+          message.classList.remove("error");
+          message.style.color = "#2563eb";
+
+          try {
+            // Send email via Formspree or similar
+            const response = await fetch(EMAIL_API_ENDPOINT, {
+              method: 'POST',
+              headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ email: emailInput.value })
+            });
+
+            if (response.ok) {
+              message.textContent = "Thank you for subscribing!";
+              message.style.color = "#16a34a";
+              form.reset();
+            } else {
+              message.textContent = "Something went wrong. Please try again later.";
+              message.classList.add("error");
+              message.style.color = "#ef4444";
+            }
+          } catch (err) {
+            message.textContent = "Network error. Please try again.";
+            message.classList.add("error");
+            message.style.color = "#ef4444";
+          }
+        } else {
+          message.textContent = "Please enter a valid email address.";
+          message.classList.add("error");
+          message.style.color = "#ef4444";
+        }
+      });
+    }
+
+    handleFormSubmit("emailForm", "email", "formMessage");
+    handleFormSubmit("emailFormBottom", "email-bottom", "formMessageBottom");
+  </script>
+</body>
+</html>
